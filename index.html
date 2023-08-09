@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Sending Software</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            /* Set background image */
+            background-image: url('/static/images/background.jpg');
+            /* Set background size and repeat */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Optional: Set background color for content area */
+            background-color: rgba(255, 255, 255, 0.7);
+            /* Optional: Add some padding to content area */
+            padding: 20px;
+        }
+
+        .container {
+            /* Optional: Add some background color to the form */
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Optional: Add some padding to the form */
+            padding: 20px;
+            /* Create a semi-transparent background with a blur effect */
+            background-image: url('/static/images/background.jpg');
+            background-size: cover;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Update input field styles */
+        .form-control {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Enter The Required Fields</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="input1">Message:</label>
+                <input type="text" class="form-control" id="input1" name="input1" required>
+            </div>
+            <div class="form-group">
+                <label for="input2">PDF-PATH:</label>
+                <input type="text" class="form-control" id="input2" name="input2" required>
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS (Optional, for certain components) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
